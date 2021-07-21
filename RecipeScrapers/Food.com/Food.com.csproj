@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>RecipeScrapers.Food.Com</RootNamespace>
+    <AssemblyName>RecipeScrapers.Food.Com</AssemblyName>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="26.0.1" />
+    <PackageReference Include="OpenScraping" Version="1.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\recipes.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\recipes.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
